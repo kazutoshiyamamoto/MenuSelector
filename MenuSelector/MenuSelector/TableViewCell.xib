@@ -16,18 +16,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N27-P4-nC9">
-                        <rect key="frame" x="16" y="12" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N27-P4-nC9">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="44"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-M0-Nce">
-                        <rect key="frame" x="276" y="0.0" width="44" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-M0-Nce">
+                        <rect key="frame" x="270" y="0.0" width="50" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="mBd-qm-Bzn"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="N27-P4-nC9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HBT-cq-iAg"/>
+                    <constraint firstAttribute="trailing" secondItem="2qC-M0-Nce" secondAttribute="trailing" id="HrT-VZ-M0y"/>
+                    <constraint firstItem="N27-P4-nC9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eKP-k7-FsV"/>
+                    <constraint firstAttribute="bottom" secondItem="N27-P4-nC9" secondAttribute="bottom" id="fQS-pG-EGA"/>
+                    <constraint firstItem="2qC-M0-Nce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lJO-qT-LZk"/>
+                    <constraint firstItem="2qC-M0-Nce" firstAttribute="leading" secondItem="N27-P4-nC9" secondAttribute="trailing" id="qvc-CT-So9"/>
+                    <constraint firstAttribute="bottom" secondItem="2qC-M0-Nce" secondAttribute="bottom" id="sz0-Zf-cK2"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="140.57971014492756" y="123.88392857142857"/>
