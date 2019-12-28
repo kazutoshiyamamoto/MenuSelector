@@ -22,8 +22,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-M0-Nce">
-                        <rect key="frame" x="270" y="0.0" width="50" height="44"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-M0-Nce">
+                        <rect key="frame" x="270" y="2" width="50" height="40.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="mBd-qm-Bzn"/>
                         </constraints>
@@ -43,4 +43,7 @@
             <point key="canvasLocation" x="140.57971014492756" y="123.88392857142857"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
