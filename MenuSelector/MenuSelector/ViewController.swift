@@ -21,6 +21,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
+    
+    private func changeTableViewTopConstraint() {
+        if self.activeTableViewTopConstraint.isActive == true {
+            NSLayoutConstraint.deactivate([self.activeTableViewTopConstraint])
+            NSLayoutConstraint.activate([self.deactiveTableViewTopConstraint])
+        } else {
+            NSLayoutConstraint.deactivate([self.deactiveTableViewTopConstraint])
+            NSLayoutConstraint.activate([self.activeTableViewTopConstraint])
+        }
+        
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
