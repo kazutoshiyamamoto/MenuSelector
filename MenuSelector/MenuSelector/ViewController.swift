@@ -54,6 +54,12 @@ extension ViewController: UITableViewDataSource {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.label.text = self.tableViewCellTitles[indexPath.row]
         
+        if self.checked[indexPath.row] == false {
+            cell.accessoryType = .none
+        } else {
+            cell.accessoryType = .checkmark
+        }
+        
         return cell
     }
 }
