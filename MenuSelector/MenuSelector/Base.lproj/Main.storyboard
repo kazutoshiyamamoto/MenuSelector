@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="XD0-hZ-aLW"/>
-                                    <constraint firstAttribute="height" constant="140" id="vgk-rC-zjC"/>
+                                    <constraint firstAttribute="height" constant="120" id="vgk-rC-zjC"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
