@@ -41,7 +41,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hMm-UK-GTZ"/>
+                    <navigationItem key="navigationItem" id="hMm-UK-GTZ">
+                        <barButtonItem key="rightBarButtonItem" title="button" id="Z7K-YM-8Bb"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="activeTableViewTopConstraint" destination="vgk-rC-zjC" id="gMx-Ge-XHM"/>
                         <outlet property="deactiveTableViewTopConstraint" destination="XD0-hZ-aLW" id="2dI-fu-D7Z"/>
