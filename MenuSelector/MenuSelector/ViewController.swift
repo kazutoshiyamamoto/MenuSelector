@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var button: UIBarButtonItem!
     
     @IBOutlet weak var activeTableViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var deactiveTableViewTopConstraint: NSLayoutConstraint!
