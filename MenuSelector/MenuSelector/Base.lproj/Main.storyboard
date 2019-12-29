@@ -42,6 +42,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activeTableViewTopConstraint" destination="vgk-rC-zjC" id="gMx-Ge-XHM"/>
+                        <outlet property="deactiveTableViewTopConstraint" destination="XD0-hZ-aLW" id="2dI-fu-D7Z"/>
                         <outlet property="tableView" destination="Mz8-JA-MCB" id="c7c-aI-dqh"/>
                     </connections>
                 </viewController>

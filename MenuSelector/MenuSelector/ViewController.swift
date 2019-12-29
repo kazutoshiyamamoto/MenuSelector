@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var activeTableViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var deactiveTableViewTopConstraint: NSLayoutConstraint!
+    
     private let tableViewCellTitles = ["新着順", "価格の高い順", "価格の低い順"]
     
     override func viewDidLoad() {
