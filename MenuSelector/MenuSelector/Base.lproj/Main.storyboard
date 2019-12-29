@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-JA-MCB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-JA-MCB">
                                 <rect key="frame" x="207" y="88" width="207" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -42,7 +42,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hMm-UK-GTZ">
-                        <barButtonItem key="rightBarButtonItem" title="button" id="Z7K-YM-8Bb"/>
+                        <barButtonItem key="rightBarButtonItem" title="button" id="Z7K-YM-8Bb">
+                            <connections>
+                                <action selector="tappedButton:" destination="BYZ-38-t0r" id="JpS-83-F5p"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="activeTableViewTopConstraint" destination="vgk-rC-zjC" id="gMx-Ge-XHM"/>

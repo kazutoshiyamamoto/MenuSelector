@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
     
+    @IBAction func tappedButton(_ sender: Any) {
+        self.changeTableViewTopConstraint()
+    }
+    
     private func changeTableViewTopConstraint() {
         if self.activeTableViewTopConstraint.isActive == true {
             NSLayoutConstraint.deactivate([self.activeTableViewTopConstraint])
