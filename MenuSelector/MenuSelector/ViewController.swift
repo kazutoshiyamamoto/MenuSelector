@@ -79,6 +79,8 @@ extension ViewController: UITableViewDelegate {
             self.tableView.reloadData()
             self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
         }
+        
+        self.changeTableViewTopConstraint()
     }
 }
 
