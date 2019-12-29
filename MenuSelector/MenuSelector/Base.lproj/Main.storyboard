@@ -60,6 +60,7 @@
                         <outlet property="activeTableViewTopConstraint" destination="vgk-rC-zjC" id="gMx-Ge-XHM"/>
                         <outlet property="button" destination="Z7K-YM-8Bb" id="i7F-sW-yea"/>
                         <outlet property="deactiveTableViewTopConstraint" destination="XD0-hZ-aLW" id="2dI-fu-D7Z"/>
+                        <outlet property="overlayView" destination="7F0-RR-7Vq" id="nE9-c5-5kc"/>
                         <outlet property="tableView" destination="Mz8-JA-MCB" id="c7c-aI-dqh"/>
                     </connections>
                 </viewController>
