@@ -15,9 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7F0-RR-7Vq">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKQ-aU-inD">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-JA-MCB">
                                 <rect key="frame" x="207" y="88" width="207" height="0.0"/>
@@ -39,13 +39,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7F0-RR-7Vq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7iH-A4-Xl4"/>
+                            <constraint firstItem="TKQ-aU-inD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7jQ-c1-vMy"/>
                             <constraint firstItem="Mz8-JA-MCB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Ibc-07-gLJ"/>
                             <constraint firstItem="Mz8-JA-MCB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z3T-uL-9wF"/>
-                            <constraint firstItem="7F0-RR-7Vq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Zdl-XQ-XmP"/>
+                            <constraint firstItem="TKQ-aU-inD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bgx-Tc-DGy"/>
                             <constraint firstItem="Mz8-JA-MCB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dmC-eW-oAO"/>
-                            <constraint firstItem="7F0-RR-7Vq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fdz-i2-kdA"/>
-                            <constraint firstItem="7F0-RR-7Vq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p0W-ne-qUs"/>
+                            <constraint firstItem="TKQ-aU-inD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e4h-1m-sno"/>
+                            <constraint firstItem="TKQ-aU-inD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lfl-kz-6gf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -60,7 +60,7 @@
                         <outlet property="activeTableViewTopConstraint" destination="vgk-rC-zjC" id="gMx-Ge-XHM"/>
                         <outlet property="button" destination="Z7K-YM-8Bb" id="i7F-sW-yea"/>
                         <outlet property="deactiveTableViewTopConstraint" destination="XD0-hZ-aLW" id="2dI-fu-D7Z"/>
-                        <outlet property="overlayView" destination="7F0-RR-7Vq" id="nE9-c5-5kc"/>
+                        <outlet property="overlayView" destination="TKQ-aU-inD" id="LWw-9t-5Pc"/>
                         <outlet property="tableView" destination="Mz8-JA-MCB" id="c7c-aI-dqh"/>
                     </connections>
                 </viewController>

@@ -35,9 +35,13 @@ class ViewController: UIViewController {
         if self.activeTableViewTopConstraint.isActive == true {
             NSLayoutConstraint.deactivate([self.activeTableViewTopConstraint])
             NSLayoutConstraint.activate([self.deactiveTableViewTopConstraint])
+            
+            self.overlayView.isHidden = true
         } else {
             NSLayoutConstraint.deactivate([self.deactiveTableViewTopConstraint])
             NSLayoutConstraint.activate([self.activeTableViewTopConstraint])
+            
+            self.overlayView.isHidden = false
         }
         
         UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
