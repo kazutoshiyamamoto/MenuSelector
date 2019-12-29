@@ -33,7 +33,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mz8-JA-MCB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Ibc-07-gLJ"/>
                             <constraint firstItem="Mz8-JA-MCB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z3T-uL-9wF"/>
