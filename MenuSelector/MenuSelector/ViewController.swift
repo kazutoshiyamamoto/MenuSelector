@@ -67,6 +67,18 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == .none {
+                self.checked = (0 ..< 3).map { _ in false }
+                
+                self.checked[indexPath.row] = true
+                print("\(indexPath.row)番目の選択肢が押された")
+            }
+            self.button.title = self.tableViewCellTitles[indexPath.row]
+            self.tableView.reloadData()
+            self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+        }
     }
 }
 
