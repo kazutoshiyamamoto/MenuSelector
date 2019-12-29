@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        
+        self.tableView.layer.cornerRadius = 2.0
     }
     
     @IBAction func tappedButton(_ sender: Any) {
