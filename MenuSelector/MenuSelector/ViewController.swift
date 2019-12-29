@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var deactiveTableViewTopConstraint: NSLayoutConstraint!
     
     private let tableViewCellTitles = ["新着順", "価格の高い順", "価格の低い順"]
+    private var checked: [Bool] = [true, false, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
